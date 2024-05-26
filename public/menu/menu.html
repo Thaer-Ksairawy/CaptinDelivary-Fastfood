@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+    <header>
+        <li><a href="/">Home</a></li>
+        <h1>Captain delivery Menu</h1>
+        <div class="logo">
+            <img src="./pics/fast food logo.jpg" alt="Berger Hut Logo">
+    </header>
+
+    <section class="menu">
+        <div class="menu-items" id="menu-items">
+
+        </div>
+    </section>
+
+
+    <section class="reservations">
+        <div class="reservation-form">
+            <h2>Order</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <div id="cart">
+                    <h3>Shopping Cart</h3>
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                    <button onclick="placeOrder()">Place Order</button>
+                    <button id="cancel" onclick="cancel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; We are pleased that you ordered from us.</p>
+        <h1 id="footer-h1">
+            <p> &#9993;     m.thaeer.93@gmail.com</p>
+        </h1>
+        <h1 id="footer-h1">
+            <p>&#9990;      +963/952845502</p>
+        </h1>
+
+    </footer>
+
+    <script defer src="./js/menu.js"></script>
+</body>
+
+</html>
