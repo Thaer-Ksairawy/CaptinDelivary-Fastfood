@@ -5,7 +5,7 @@ import SiteRouter from "./routes/site-routes.js";
 import foodRoutes from "./routes/food-routes.js";
 
 const app = express();
-
+const port = process.env.PORT || 4000;
 const allowedOrigins = [
   null,
   "http://localhost",
@@ -42,7 +42,7 @@ app.use(
   
   
   
-  app.listen(5000, () =>
+  app.listen(port, () =>
     console.log(`Example app listening on port 5000!`),
   );
   
