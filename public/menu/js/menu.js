@@ -1,5 +1,5 @@
 async function get() {
-    const response = await fetch('http://127.0.0.1:5000/data/all');
+    const response = await fetch('https://captindelivary-fastfood.onrender.com/menu/data/all');
     const data = await response.json();
     return data;
 }
